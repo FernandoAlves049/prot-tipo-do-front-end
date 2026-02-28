@@ -1,0 +1,4011 @@
+[
+  {
+    "id": 1,
+    "name": "Arroz Vasconcelos",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 28.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      25.65,
+      27.07,
+      27.93,
+      28.5
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Arroz Barão",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 31,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      27.9,
+      29.45,
+      30.38,
+      31
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Arroz Brejeiro",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 23,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      20.7,
+      21.85,
+      22.54,
+      23
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Feijão carioca Cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Feijão carioca Barão",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Feijão carioca Patureba",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Feijão carioca Garotinho",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Feijão preto cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 12,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      10.8,
+      11.4,
+      11.76,
+      12
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Feijão preto Barão",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 11,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      9.9,
+      10.45,
+      10.78,
+      11
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Feijão preto Dona de",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Óleo soja comigo",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Óleo soja brasileiro",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Óleo soja concórdia",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Farinha de trigo cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Farinha de trigo sotrigo",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Farinha de trigo cristal emegê",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Farinha de trigo Araguaia",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Macarrão parafuso 500g Califórn",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Macarrão parafuso emegê",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Macarrão espaguete 1kg cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Macarrão espaguete Califórnia",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Sazón",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Orégano",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Chimichurri",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Açafrão",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Canela",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Extrato goiali",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.25,
+      2.38,
+      2.45,
+      2.5
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Extrato Fugini",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Extrato Dez",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.25,
+      2.38,
+      2.45,
+      2.5
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Bolacha rosquinha Mabel",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.65,
+      8.07,
+      8.33,
+      8.5
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Bolacha rosquinha adoralle",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Bolacha rosquinha rancheiro",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.85,
+      6.17,
+      6.37,
+      6.5
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Bolacha rosquinha belma",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Bolacha cream crack Mabel",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Bolacha cream crack adoralle",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Bolacha cream crack belma",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Toddy 200g",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Nescau 200g",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Leite condenado italac",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.85,
+      6.17,
+      6.37,
+      6.5
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Leite condenado",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Leite condenado mococa",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.95,
+      5.22,
+      5.39,
+      5.5
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Creme de leite italac",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.15,
+      3.32,
+      3.43,
+      3.5
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Creme de leite Nestle",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.85,
+      6.17,
+      6.37,
+      6.5
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Creme de leite Piracanjuba",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Café gigante 250g",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 19,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.1,
+      18.05,
+      18.62,
+      19
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Café pirâmide",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 20.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      18.45,
+      19.47,
+      20.09,
+      20.5
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Café coringa",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 19.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.55,
+      18.52,
+      19.11,
+      19.5
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Pão de forma Pullman",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 10,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9,
+      9.5,
+      9.8,
+      10
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Pão de forma sevenboys",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Pão de forma DiNapoli",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Tomate",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 10,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      9,
+      9.5,
+      9.8,
+      10
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Cenoura",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 4.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      4.05,
+      4.27,
+      4.41,
+      4.5
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Batata",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Cebola",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 4.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      4.05,
+      4.27,
+      4.41,
+      4.5
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Alho",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 3.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      3.15,
+      3.32,
+      3.43,
+      3.5
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Alface",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 2.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      2.25,
+      2.38,
+      2.45,
+      2.5
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Batata doce",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Repolho",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Laranja",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 9.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      8.55,
+      9.03,
+      9.31,
+      9.5
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Banana nanica",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Banana prata",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Banana maçã",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Banana terra",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Maçã",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 12,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      10.8,
+      11.4,
+      11.76,
+      12
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Limão",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 3.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      3.15,
+      3.32,
+      3.43,
+      3.5
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Ovo branco",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 18.5,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      16.65,
+      17.57,
+      18.13,
+      18.5
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Ovo caipira",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 25,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      22.5,
+      23.75,
+      24.5,
+      25
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Pepsi",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 6.5,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.85,
+      6.17,
+      6.37,
+      6.5
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Pepsi balch",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Guaraná antártica",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 6.5,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.85,
+      6.17,
+      6.37,
+      6.5
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Guaraná antártica zero",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Coca cola",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 8.5,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.65,
+      8.07,
+      8.33,
+      8.5
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Coca zero",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Suco lafruit",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 5.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.95,
+      5.22,
+      5.39,
+      5.5
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Suco lafruit light",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 5.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.95,
+      5.22,
+      5.39,
+      5.5
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Suco adoralle",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 6.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.85,
+      6.17,
+      6.37,
+      6.5
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Suco del Valle",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 8.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.65,
+      8.07,
+      8.33,
+      8.5
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Colgate",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Closeup",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Absorvente intimus noturno",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 9.5,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.55,
+      9.03,
+      9.31,
+      9.5
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Absorvente always noturno",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 10,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9,
+      9.5,
+      9.8,
+      10
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Absorvente milli noturno",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Creme seda",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 13,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      11.7,
+      12.35,
+      12.74,
+      13
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Shampoo dove",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 17.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      15.75,
+      16.63,
+      17.15,
+      17.5
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Condicionador dove",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 20.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      18.45,
+      19.47,
+      20.09,
+      20.5
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Shampoo Elseve 200ml",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 19,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.1,
+      18.05,
+      18.62,
+      19
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Condicionador Elseve",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 25.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      22.95,
+      24.22,
+      24.99,
+      25.5
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Sabonete palmolive",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Sabonete Lux",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Sabonete laflore",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 4.5,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.05,
+      4.27,
+      4.41,
+      4.5
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Desodorante masculino Rexona",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 22,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      19.8,
+      20.9,
+      21.56,
+      22
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Desodorante masculino Bozzano",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Desodorante masculino Above",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Desodorante feminino Rexona",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 22,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      19.8,
+      20.9,
+      21.56,
+      22
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Desodorante feminino Nivea",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 17,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      15.3,
+      16.15,
+      16.66,
+      17
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Desodorante feminino Giovanna",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 15,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      13.5,
+      14.25,
+      14.7,
+      15
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Papel higiênico Mili",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 18,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      16.2,
+      17.1,
+      17.64,
+      18
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Papel higiênico atualle",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 13,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      11.7,
+      12.35,
+      12.74,
+      13
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Papel higiênico mímmo",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 18,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      16.2,
+      17.1,
+      17.64,
+      18
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Papel toalha snob 50",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Papel toalha Mili",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Limpador veja",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 14.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      13.05,
+      13.77,
+      14.21,
+      14.5
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Limpador CIF",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Limpador Ypê",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Desinfetante pinho",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Desinfetante Ypê",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Desinfetante pinho sol",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Água sanitária qBoa 1 litro",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Água sanitária ki joia",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Água sanitária zupp",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 2.5,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.25,
+      2.38,
+      2.45,
+      2.5
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Detergente Ypê",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Detergente azulim",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 1,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      0.9,
+      0.95,
+      0.98,
+      1
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Detergente ki joia",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 1,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      0.9,
+      0.95,
+      0.98,
+      1
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Sabão de barra ype",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 10,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9,
+      9.5,
+      9.8,
+      10
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Sabão em barra minuano",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Sabão em pó omo 800g",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Sabão em pó minuano",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 10,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9,
+      9.5,
+      9.8,
+      10
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Sabão em pó tixan",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 7.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.75,
+      7.13,
+      7.35,
+      7.5
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Sabão em pó brilhante",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 14.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      13.05,
+      13.77,
+      14.21,
+      14.5
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Amaciante Ypê 2L",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 11,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9.9,
+      10.45,
+      10.78,
+      11
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Amaciante sense",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Amaciante mon bijou",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 9.5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.55,
+      9.03,
+      9.31,
+      9.5
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Maionese quero sachê 200g",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Maionese Hellmann's",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Maionese fugini",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Acem",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 28.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      25.65,
+      27.07,
+      27.93,
+      28.5
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Alcatra",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 43,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      38.7,
+      40.85,
+      42.14,
+      43
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Cupim",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 36,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      32.4,
+      34.2,
+      35.28,
+      36
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Patinho",
+    "category": "Outros",
+    "storeType": "supermercado",
+    "price": 37.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      33.75,
+      35.63,
+      36.75,
+      37.5
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Costela",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 20.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      18.45,
+      19.47,
+      20.09,
+      20.5
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Barriguinha",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 19,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.1,
+      18.05,
+      18.62,
+      19
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Bisteca",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 26,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      23.4,
+      24.7,
+      25.48,
+      26
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Lombo",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 25,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      22.5,
+      23.75,
+      24.5,
+      25
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Costelinha",
+    "category": "Outros",
+    "storeType": "supermercado",
+    "price": 25,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      22.5,
+      23.75,
+      24.5,
+      25
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Pernil",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 18,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      16.2,
+      17.1,
+      17.64,
+      18
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Asinha",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 16,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      14.4,
+      15.2,
+      15.68,
+      16
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Coxinha",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 16,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      14.4,
+      15.2,
+      15.68,
+      16
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Coxa sobrecoxa",
+    "category": "Outros",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Filé de peito",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 24,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      21.6,
+      22.8,
+      23.52,
+      24
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Frango",
+    "category": "Carnes",
+    "storeType": "supermercado",
+    "price": 10.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9.45,
+      9.97,
+      10.29,
+      10.5
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Açucar cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 19.75,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.78,
+      18.76,
+      19.36,
+      19.75
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Açucar Vasconcelos",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 21,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      18.9,
+      19.95,
+      20.58,
+      21
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Açucar ecoaçucar",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 20,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      18,
+      19,
+      19.6,
+      20
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Cerveja amstel",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 2.75,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0.15,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.48,
+      2.61,
+      2.69,
+      2.75
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Cerveja Heineken",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 4.75,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0.15,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.28,
+      4.51,
+      4.66,
+      4.75
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Cerveja Skol",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 2.25,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0.15,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.02,
+      2.14,
+      2.21,
+      2.25
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Cerveja Brahma",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0.15,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Cerveja antartica",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0.15,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Leite Piracanjuba",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5.5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.95,
+      5.22,
+      5.39,
+      5.5
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Leite Italac",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Leite LeitBom",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Arroz Crystal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 34,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      30.6,
+      32.3,
+      33.32,
+      34
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Arroz Painho",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 25,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      22.5,
+      23.75,
+      24.5,
+      25
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Arroz Tio Jorge",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 26,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      23.4,
+      24.7,
+      25.48,
+      26
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Feijão carioca cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Feijão carioca filetto",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Feijão Califórnia",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Feijão rajada cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 11,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      9.9,
+      10.45,
+      10.78,
+      11
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Óleo comigo",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Óleo vitaliv",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Óleo brasileiro",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Óleo vila velha",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Sal cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Sal moc",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Sal cisne",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Sal uniouro",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Feijão preto grão dourado",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Feijão preto catalão",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Feijão preto Vasconcelos",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Feijão preto filetto",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Farinha de trigo cristal - emegê",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.00165,
+      "cofins": 0.0076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Macarrão espaguete cristal",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Macarrão parafuso Califórnia",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Macarrão parafuso safra",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Extrato olé",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 2,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      1.8,
+      1.9,
+      1.96,
+      2
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Bolacha rosquinha emegê",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Bolacha cream crack Vitarella",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Leite condenado Piracanjuba",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Café gigante",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 19,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.1,
+      18.05,
+      18.62,
+      19
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Leite bonolat",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Leite compleite",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Pão de forma vilão pao",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 8,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      7.2,
+      7.6,
+      7.84,
+      8
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Maçã fala",
+    "category": "Hortifruti",
+    "storeType": "supermercado",
+    "price": 13,
+    "taxes": {
+      "icms": 0,
+      "ipi": 0,
+      "pis": 0,
+      "cofins": 0
+    },
+    "history": [
+      11.7,
+      12.35,
+      12.74,
+      13
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Pepsi Black",
+    "category": "Bebidas",
+    "storeType": "supermercado",
+    "price": 6,
+    "taxes": {
+      "icms": 0.21,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Shampoo seda",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 12,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      10.8,
+      11.4,
+      11.76,
+      12
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Condicionador",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Shampoo Elseve",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 29,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.07,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      26.1,
+      27.55,
+      28.42,
+      29
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Sabonete Palmolive",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Rexona",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 16,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      14.4,
+      15.2,
+      15.68,
+      16
+    ]
+  },
+  {
+    "id": 190,
+    "name": "Above",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 11,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9.9,
+      10.45,
+      10.78,
+      11
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Nivea",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Giovanna baby",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 16,
+    "taxes": {
+      "icms": 0.25,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      14.4,
+      15.2,
+      15.68,
+      16
+    ]
+  },
+  {
+    "id": 193,
+    "name": "Papel toalha snob",
+    "category": "Higiene",
+    "storeType": "supermercado",
+    "price": 5,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      4.5,
+      4.75,
+      4.9,
+      5
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Desifetante pinho",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 4,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Desifetante pinho sol",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 9,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      8.1,
+      8.55,
+      8.82,
+      9
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Desifetante Ypê",
+    "category": "Outros",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Água sanitária qboa",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Detergente zupp",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 1,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      0.9,
+      0.95,
+      0.98,
+      1
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Sabão de barro ype",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 14,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      12.6,
+      13.3,
+      13.72,
+      14
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Sabão de barro família",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 12,
+    "taxes": {
+      "icms": 0.12,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      10.8,
+      11.4,
+      11.76,
+      12
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Sabão em pó omo",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 17,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      15.3,
+      16.15,
+      16.66,
+      17
+    ]
+  },
+  {
+    "id": 202,
+    "name": "Amaciante Ypê",
+    "category": "Limpeza",
+    "storeType": "supermercado",
+    "price": 11,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0.05,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      9.9,
+      10.45,
+      10.78,
+      11
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Maionese Hellmanns",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 7,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      6.3,
+      6.65,
+      6.86,
+      7
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Maionese quero",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 3,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      2.7,
+      2.85,
+      2.94,
+      3
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Açúcar Vasconcelos",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 28,
+    "taxes": {
+      "icms": 0.07,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      25.2,
+      26.6,
+      27.44,
+      28
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Gasolina",
+    "category": "Combustíveis",
+    "storeType": "posto",
+    "price": 6,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Etanol",
+    "category": "Combustíveis",
+    "storeType": "posto",
+    "price": 4,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      3.6,
+      3.8,
+      3.92,
+      4
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Diesel",
+    "category": "Combustíveis",
+    "storeType": "posto",
+    "price": 6,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      5.4,
+      5.7,
+      5.88,
+      6
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Bujão de gás",
+    "category": "Combustíveis",
+    "storeType": "posto",
+    "price": 98,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      88.2,
+      93.1,
+      96.04,
+      98
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Pão francês",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 15,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      13.5,
+      14.25,
+      14.7,
+      15
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Pão amanteigado",
+    "category": "Alimentos",
+    "storeType": "supermercado",
+    "price": 19,
+    "taxes": {
+      "icms": 0.19,
+      "ipi": 0,
+      "pis": 0.0165,
+      "cofins": 0.076
+    },
+    "history": [
+      17.1,
+      18.05,
+      18.62,
+      19
+    ]
+  }
+]
