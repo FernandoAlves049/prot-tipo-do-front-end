@@ -34,6 +34,9 @@ Thumbs.db
 # Cache do Vite
 .vite/
 
+# Documentação local
+docs/
+
 # Scripts de desenvolvimento (gerados automaticamente)
 src/rebuild_app.mjs
 src/restore_and_theme.mjs
