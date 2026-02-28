@@ -17,8 +17,27 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Cache do Vite
+.vite/
+
+# Scripts de desenvolvimento (gerados automaticamente)
+src/rebuild_app.mjs
+src/restore_and_theme.mjs
+src/patch_app.mjs
+src/full_rebuild.mjs
+src/add_taxes_tab.mjs
+src/initialProducts.json
