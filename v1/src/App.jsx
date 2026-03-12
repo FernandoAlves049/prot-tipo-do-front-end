@@ -1,15 +1,15 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Login from './Login';
 import TaxesExplanationTab from './TaxesExplanationTab';
-import { 
-  BarChart3, 
-  PlusCircle, 
-  ShoppingCart, 
-  Search, 
-  Filter, 
-  Info, 
-  Trash2, 
-  Plus, 
+import {
+  BarChart3,
+  PlusCircle,
+  ShoppingCart,
+  Search,
+  Filter,
+  Info,
+  Trash2,
+  Plus,
   Minus,
   TrendingUp,
   AlertCircle,
@@ -27,7 +27,7 @@ import {
 } from 'lucide-react';
 
 // --- CONFIGURAÇÃO DA API GEMINI ---
-const apiKey = ""; // A chave será providenciada pelo ambiente de execução
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // Chave lida do arquivo .env
 
 const fetchGeminiWithRetry = async (prompt, retries = 5) => {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
@@ -4088,24 +4088,24 @@ export default function App() {
       const text = e.target.result;
       const lines = text.split('\n').filter(line => line.trim() !== '');
       const newProducts = [];
-      
+
       for (let i = 1; i < lines.length; i++) {
         const cols = lines[i].split(',');
-        if (cols.length < 10) continue; 
-        
+        if (cols.length < 10) continue;
+
         const name = cols[1]?.trim() || 'Produto Desconhecido';
         const price = parseFloat(cols[2]) || 0;
-        
+
         const parseTax = (val) => {
-           if(!val) return 0;
-           const clean = val.replace('%', '').trim();
-           return (parseFloat(clean) / 100) || 0;
+          if (!val) return 0;
+          const clean = val.replace('%', '').trim();
+          return (parseFloat(clean) / 100) || 0;
         };
 
         const icms = parseTax(cols[3]);
-        const pis = parseTax(cols[5]);  
-        const cofins = parseTax(cols[7]); 
-        const ipi = parseTax(cols[9]);  
+        const pis = parseTax(cols[5]);
+        const cofins = parseTax(cols[7]);
+        const ipi = parseTax(cols[9]);
 
         // Categorização
         let category = 'Outros';
@@ -4131,10 +4131,10 @@ export default function App() {
           history: [price * 0.90, price * 0.95, price * 0.98, price]
         });
       }
-      
+
       setProducts(newProducts);
       alert(`${newProducts.length} produtos carregados com sucesso e classificados em Supermercado/Postos!`);
-      event.target.value = null; 
+      event.target.value = null;
     };
     reader.readAsText(file);
   };
@@ -4197,10 +4197,10 @@ export default function App() {
             <p className="text-slate-400 text-sm font-medium">Projeto de Extensão - Morrinhos/GO</p>
           </div>
         </div>
-        
+
         <div>
           <input type="file" accept=".csv" ref={fileInputRef} onChange={handleFileUpload} className="hidden" />
-          <button 
+          <button
             onClick={() => fileInputRef.current.click()}
             className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 transition-all shadow-md shadow-emerald-500/20"
           >
@@ -4224,9 +4224,8 @@ export default function App() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex-1 flex items-center justify-center gap-2 py-4 px-4 transition-all duration-300 relative ${
-              activeTab === tab.id ? `${theme.navActiveText} ${theme.navActiveBg}` : `text-slate-500 ${theme.navHoverText} hover:bg-slate-50`
-            }`}
+            className={`flex-1 flex items-center justify-center gap-2 py-4 px-4 transition-all duration-300 relative ${activeTab === tab.id ? `${theme.navActiveText} ${theme.navActiveBg}` : `text-slate-500 ${theme.navHoverText} hover:bg-slate-50`
+              }`}
           >
             <tab.icon size={20} className={activeTab === tab.id ? theme.navActiveText : 'text-slate-400'} />
             <span className="font-semibold text-sm hidden sm:block">{tab.label}</span>
@@ -4296,7 +4295,7 @@ export default function App() {
     }, [activeStore]);
 
     const storeProducts = useMemo(() => products.filter(p => p.storeType === activeStore), [products, activeStore]);
-    
+
     const filteredProducts = useMemo(() => {
       return storeProducts.filter(p => {
         const matchCat = selectedCategory === 'Todos' || p.category === selectedCategory;
@@ -4342,20 +4341,20 @@ export default function App() {
     const getChartData = (history) => {
       if (!history || history.length === 0) return [];
       const data = history.map((p, i) => ({ price: p, type: 'history', label: `Mês ${i + 1}` }));
-      
+
       let avgGrowth = 0;
       if (history.length > 1) {
         let totalGrowth = 0;
         for (let i = 1; i < history.length; i++) {
-          totalGrowth += (history[i] - history[i-1]) / history[i-1];
+          totalGrowth += (history[i] - history[i - 1]) / history[i - 1];
         }
         avgGrowth = totalGrowth / (history.length - 1);
       } else {
         avgGrowth = 0.01; // Crescimento padrão de 1% caso só exista 1 preço
       }
-      
+
       let lastPrice = history[history.length - 1];
-      for (let i = 1; i <= 2; i++) { 
+      for (let i = 1; i <= 2; i++) {
         lastPrice = lastPrice * (1 + avgGrowth);
         data.push({ price: lastPrice, type: 'prediction', label: `Prev ${i}` });
       }
@@ -4363,7 +4362,7 @@ export default function App() {
     };
 
     const chartData = activeProduct ? getChartData(activeProduct.history) : [];
-    
+
     // Cálculos de escala para o Gráfico de Linhas (SVG)
     let historyPath = '';
     let predPath = '';
@@ -4375,7 +4374,7 @@ export default function App() {
       const prices = chartData.map(d => d.price);
       const minPrice = Math.min(...prices);
       const maxPrice = Math.max(...prices);
-      const padding = (maxPrice - minPrice) * 0.2 || minPrice * 0.1; 
+      const padding = (maxPrice - minPrice) * 0.2 || minPrice * 0.1;
       const yMin = Math.max(0, minPrice - padding);
       const yMax = maxPrice + padding;
       const yRange = yMax - yMin;
@@ -4388,29 +4387,27 @@ export default function App() {
 
       const firstPredIdx = historyData.length;
       // A linha de predição conecta-se ao último ponto do histórico
-      const predDataForPath = chartData.slice(firstPredIdx - 1); 
+      const predDataForPath = chartData.slice(firstPredIdx - 1);
       predPath = predDataForPath.map((d, i) => `${getX(firstPredIdx - 1 + i)},${getY(d.price)}`).join(' ');
     }
 
     return (
       <div className={`p-6 -mx-4 sm:-mx-6 -mt-6 rounded-3xl animate-in fade-in duration-700 transition-colors ${theme.bgApp} min-h-[800px]`}>
-        
+
         {/* Toggle Duplo de Lojas */}
         <div className="flex justify-center mb-8 pt-4">
           <div className="bg-slate-200/50 dark:bg-slate-800/50 p-1.5 rounded-2xl flex gap-2 backdrop-blur-sm border border-slate-300/50 shadow-inner">
-            <button 
+            <button
               onClick={() => setActiveStore('supermercado')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
-                activeStore === 'supermercado' ? 'bg-white text-emerald-600 shadow-md' : 'text-slate-500 hover:text-emerald-700 hover:bg-slate-100/50'
-              }`}
+              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${activeStore === 'supermercado' ? 'bg-white text-emerald-600 shadow-md' : 'text-slate-500 hover:text-emerald-700 hover:bg-slate-100/50'
+                }`}
             >
               <ShoppingBasket size={18} /> Varejo & Supermercado
             </button>
-            <button 
+            <button
               onClick={() => setActiveStore('posto')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
-                activeStore === 'posto' ? 'bg-slate-900 text-amber-400 shadow-lg ring-1 ring-slate-700' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100/50'
-              }`}
+              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${activeStore === 'posto' ? 'bg-slate-900 text-amber-400 shadow-lg ring-1 ring-slate-700' : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100/50'
+                }`}
             >
               <Fuel size={18} /> Postos de Combustível
             </button>
@@ -4435,7 +4432,7 @@ export default function App() {
                 ))}
               </div>
             </Card>
-            
+
             <Card className={`p-5 flex flex-col justify-center border-l-4 ${theme.cardBg} ${theme.borderAccent}`}>
               <span className={`text-sm font-bold mb-1 ${theme.textSecondary}`}>Preço Médio Unitário</span>
               <span className={`text-3xl font-black tracking-tight ${theme.textPrimary} ${activeStore === 'posto' ? 'font-mono' : ''}`}>
@@ -4455,7 +4452,7 @@ export default function App() {
 
           {/* ÁREA PRINCIPAL DO DASHBOARD */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            
+
             {/* Coluna Esquerda: Seletor de Produtos */}
             <Card className={`flex flex-col h-[600px] ${theme.cardBg}`}>
               <div className={`p-4 border-b ${theme.cardHeader}`}>
@@ -4465,9 +4462,8 @@ export default function App() {
                 <input
                   type="text"
                   placeholder="Buscar..."
-                  className={`w-full px-4 py-3 bg-transparent border rounded-xl focus:ring-2 outline-none text-sm transition-all ${
-                    activeStore === 'posto' ? 'border-slate-700 text-white placeholder-slate-500 focus:ring-amber-500 focus:border-amber-500' : 'border-slate-300 text-slate-800 focus:ring-emerald-500'
-                  }`}
+                  className={`w-full px-4 py-3 bg-transparent border rounded-xl focus:ring-2 outline-none text-sm transition-all ${activeStore === 'posto' ? 'border-slate-700 text-white placeholder-slate-500 focus:ring-amber-500 focus:border-amber-500' : 'border-slate-300 text-slate-800 focus:ring-emerald-500'
+                    }`}
                   value={dashSearch}
                   onChange={(e) => setDashSearch(e.target.value)}
                 />
@@ -4479,11 +4475,10 @@ export default function App() {
                       <li key={p.id}>
                         <button
                           onClick={() => { setSelectedProduct(p); setAiExplanation(''); }}
-                          className={`w-full text-left px-4 py-3 rounded-xl transition-all flex justify-between items-center border ${
-                            activeProduct?.id === p.id 
-                              ? `${theme.accentBgLight}` 
-                              : `bg-transparent border-transparent hover:${activeStore==='posto'?'bg-slate-800':'bg-slate-50'} ${theme.textPrimary}`
-                          }`}
+                          className={`w-full text-left px-4 py-3 rounded-xl transition-all flex justify-between items-center border ${activeProduct?.id === p.id
+                              ? `${theme.accentBgLight}`
+                              : `bg-transparent border-transparent hover:${activeStore === 'posto' ? 'bg-slate-800' : 'bg-slate-50'} ${theme.textPrimary}`
+                            }`}
                         >
                           <span className="font-semibold text-sm truncate pr-2">{p.name}</span>
                           <span className={`text-xs font-bold ${activeProduct?.id === p.id ? theme.accentColor : theme.textSecondary}`}>
@@ -4504,14 +4499,13 @@ export default function App() {
             {/* Coluna Direita: Detalhes do Produto */}
             {activeProduct ? (
               <div className="lg:col-span-2 space-y-6 flex flex-col">
-                
+
                 {/* Header do Produto */}
                 <Card className={`p-6 ${theme.cardBg}`}>
                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                     <div>
-                      <span className={`inline-block px-3 py-1 text-xs font-bold rounded-lg mb-2 uppercase tracking-wider ${
-                        activeStore === 'posto' ? 'bg-slate-800 text-amber-500' : 'bg-slate-100 text-emerald-700'
-                      }`}>
+                      <span className={`inline-block px-3 py-1 text-xs font-bold rounded-lg mb-2 uppercase tracking-wider ${activeStore === 'posto' ? 'bg-slate-800 text-amber-500' : 'bg-slate-100 text-emerald-700'
+                        }`}>
                         {activeProduct.category}
                       </span>
                       <h2 className={`text-3xl font-black ${theme.textPrimary}`}>{activeProduct.name}</h2>
@@ -4525,13 +4519,12 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className={`mt-6 pt-6 border-t ${activeStore==='posto'?'border-slate-800':'border-slate-100'}`}>
-                    <button 
-                      onClick={handleExplainTrend} 
-                      disabled={isExplaining} 
-                      className={`w-full font-bold py-3 px-4 rounded-xl flex justify-center items-center gap-2 transition-all shadow-sm border disabled:opacity-50 ${
-                        activeStore === 'posto' ? 'bg-slate-800 border-slate-700 text-amber-400 hover:bg-slate-700' : 'bg-emerald-50 border-emerald-200 text-emerald-700 hover:bg-emerald-100'
-                      }`}
+                  <div className={`mt-6 pt-6 border-t ${activeStore === 'posto' ? 'border-slate-800' : 'border-slate-100'}`}>
+                    <button
+                      onClick={handleExplainTrend}
+                      disabled={isExplaining}
+                      className={`w-full font-bold py-3 px-4 rounded-xl flex justify-center items-center gap-2 transition-all shadow-sm border disabled:opacity-50 ${activeStore === 'posto' ? 'bg-slate-800 border-slate-700 text-amber-400 hover:bg-slate-700' : 'bg-emerald-50 border-emerald-200 text-emerald-700 hover:bg-emerald-100'
+                        }`}
                     >
                       {isExplaining ? <Loader2 size={18} className="animate-spin" /> : <Sparkles size={18} />}
                       {isExplaining ? 'A extrair dados...' : 'Relatório de IA sobre este item'}
@@ -4549,12 +4542,12 @@ export default function App() {
 
                 {/* Gráficos */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1">
-                  
+
                   <Card className={`p-6 flex flex-col ${theme.cardBg}`}>
                     <h3 className={`text-sm font-bold mb-6 uppercase tracking-wider flex items-center gap-2 ${theme.textPrimary}`}>
-                      <TrendingUp size={16} className={theme.iconColor}/> Evolução e Previsão
+                      <TrendingUp size={16} className={theme.iconColor} /> Evolução e Previsão
                     </h3>
-                    
+
                     <div className="flex-1 relative flex flex-col pt-4 h-48">
                       {/* Gridlines de Fundo */}
                       <div className="absolute inset-x-0 top-4 bottom-8 flex flex-col justify-between opacity-30 pointer-events-none z-0">
@@ -4567,33 +4560,33 @@ export default function App() {
                       <div className="relative flex-1 w-full mb-2 z-10">
                         <svg className="absolute inset-0 w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
                           {/* Linha de Histórico */}
-                          <polyline 
-                            points={historyPath} 
-                            fill="none" 
-                            strokeWidth="3" 
-                            className={theme.iconColor} 
-                            stroke="currentColor" 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
+                          <polyline
+                            points={historyPath}
+                            fill="none"
+                            strokeWidth="3"
+                            className={theme.iconColor}
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                           {/* Linha de Previsão */}
-                          <polyline 
-                            points={predPath} 
-                            fill="none" 
-                            strokeWidth="3" 
-                            className={theme.iconColor} 
-                            stroke="currentColor" 
-                            strokeDasharray="6 4" 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
+                          <polyline
+                            points={predPath}
+                            fill="none"
+                            strokeWidth="3"
+                            className={theme.iconColor}
+                            stroke="currentColor"
+                            strokeDasharray="6 4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                         </svg>
 
                         {/* Pontos de Dados e Tooltips interativas */}
                         {chartData.map((d, i) => (
-                          <div 
-                            key={i} 
-                            className="absolute group cursor-pointer" 
+                          <div
+                            key={i}
+                            className="absolute group cursor-pointer"
                             style={{ left: `${getX(i)}%`, top: `${getY(d.price)}%`, transform: 'translate(-50%, -50%)' }}
                           >
                             <span className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 px-3 py-1.5 rounded-lg text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg ${theme.chartTooltip} z-20 pointer-events-none`}>
@@ -4607,9 +4600,9 @@ export default function App() {
                       {/* Rótulos do Eixo X */}
                       <div className="h-6 relative w-full mt-2">
                         {chartData.map((d, i) => (
-                          <span 
-                            key={i} 
-                            className={`absolute text-[10px] font-bold uppercase -translate-x-1/2 ${d.type === 'prediction' ? theme.accentColor : theme.textSecondary}`} 
+                          <span
+                            key={i}
+                            className={`absolute text-[10px] font-bold uppercase -translate-x-1/2 ${d.type === 'prediction' ? theme.accentColor : theme.textSecondary}`}
                             style={{ left: `${getX(i)}%` }}
                           >
                             {d.label}
@@ -4621,20 +4614,20 @@ export default function App() {
 
                   <Card className={`p-6 flex flex-col ${theme.cardBg}`}>
                     <h3 className={`text-sm font-bold mb-6 uppercase tracking-wider flex items-center gap-2 ${theme.textPrimary}`}>
-                      <PieChart size={16} className="text-rose-500"/> Tributação
+                      <PieChart size={16} className="text-rose-500" /> Tributação
                     </h3>
                     <div className="flex-1 flex flex-col justify-center">
                       <div className="h-6 flex rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden shadow-inner mb-6">
-                        <div style={{ width: `${100 - getTaxTotal(activeProduct.taxes) * 100}%` }} className={activeStore==='posto'?'bg-amber-500':'bg-emerald-500'} title="Produto" />
+                        <div style={{ width: `${100 - getTaxTotal(activeProduct.taxes) * 100}%` }} className={activeStore === 'posto' ? 'bg-amber-500' : 'bg-emerald-500'} title="Produto" />
                         <div style={{ width: `${activeProduct.taxes.icms * 100}%` }} className="bg-indigo-500" title="ICMS" />
                         <div style={{ width: `${activeProduct.taxes.cofins * 100}%` }} className="bg-blue-500" title="COFINS" />
                         <div style={{ width: `${activeProduct.taxes.pis * 100}%` }} className="bg-cyan-500" title="PIS" />
                         <div style={{ width: `${activeProduct.taxes.ipi * 100}%` }} className="bg-teal-500" title="IPI" />
                       </div>
                       <div className="grid grid-cols-2 gap-y-4 gap-x-2">
-                        <div className={`flex items-center justify-between p-2 rounded ${activeStore==='posto'?'bg-slate-800':'bg-slate-50'}`}>
+                        <div className={`flex items-center justify-between p-2 rounded ${activeStore === 'posto' ? 'bg-slate-800' : 'bg-slate-50'}`}>
                           <div className="flex items-center gap-2">
-                            <div className={`w-3 h-3 rounded-full shadow-sm ${activeStore==='posto'?'bg-amber-500':'bg-emerald-500'}`} />
+                            <div className={`w-3 h-3 rounded-full shadow-sm ${activeStore === 'posto' ? 'bg-amber-500' : 'bg-emerald-500'}`} />
                             <span className={`text-xs font-bold ${theme.textSecondary}`}>Líquido</span>
                           </div>
                           <span className={`text-xs font-black ${theme.textPrimary}`}>{(100 - getTaxTotal(activeProduct.taxes) * 100).toFixed(1)}%</span>
@@ -4645,7 +4638,7 @@ export default function App() {
                           { label: 'PIS', val: activeProduct.taxes.pis, color: 'bg-cyan-500' },
                           { label: 'IPI', val: activeProduct.taxes.ipi, color: 'bg-teal-500' }
                         ].map(tax => (
-                          <div key={tax.label} className={`flex items-center justify-between p-2 rounded transition-colors hover:${activeStore==='posto'?'bg-slate-800':'bg-slate-50'}`}>
+                          <div key={tax.label} className={`flex items-center justify-between p-2 rounded transition-colors hover:${activeStore === 'posto' ? 'bg-slate-800' : 'bg-slate-50'}`}>
                             <div className="flex items-center gap-2">
                               <div className={`w-3 h-3 rounded-full ${tax.color} shadow-sm`} />
                               <span className={`text-xs font-bold ${theme.textSecondary}`}>{tax.label}</span>
@@ -4654,7 +4647,7 @@ export default function App() {
                           </div>
                         ))}
                       </div>
-                      <div className={`mt-4 pt-4 border-t flex justify-between items-center ${activeStore==='posto'?'border-slate-800':'border-slate-100'}`}>
+                      <div className={`mt-4 pt-4 border-t flex justify-between items-center ${activeStore === 'posto' ? 'border-slate-800' : 'border-slate-100'}`}>
                         <span className="text-xs font-bold text-rose-500 uppercase">Total Impostos:</span>
                         <span className="text-lg font-black text-rose-600">R$ {(activeProduct.price * getTaxTotal(activeProduct.taxes)).toFixed(2)}</span>
                       </div>
@@ -4665,8 +4658,8 @@ export default function App() {
               </div>
             ) : (
               <Card className={`lg:col-span-2 flex flex-col items-center justify-center py-24 text-center ${theme.cardBg}`}>
-                <div className={`w-20 h-20 rounded-full flex items-center justify-center mb-4 ${activeStore==='posto'?'bg-slate-800':'bg-slate-100'}`}>
-                  <BarChart3 size={32} className={activeStore==='posto'?'text-slate-600':'text-slate-300'} />
+                <div className={`w-20 h-20 rounded-full flex items-center justify-center mb-4 ${activeStore === 'posto' ? 'bg-slate-800' : 'bg-slate-100'}`}>
+                  <BarChart3 size={32} className={activeStore === 'posto' ? 'text-slate-600' : 'text-slate-300'} />
                 </div>
                 <h3 className={`text-xl font-bold mb-2 ${theme.textPrimary}`}>Selecione um produto</h3>
                 <p className={`max-w-sm ${theme.textSecondary}`}>Utilize o menu à esquerda para escolher um item deste setor.</p>
@@ -4735,8 +4728,8 @@ export default function App() {
               ) : (
                 <div className="bg-amber-50 border border-amber-200 p-6 rounded-xl text-center">
                   <p className="text-amber-800 font-medium mb-4">Produto não encontrado. Quer adicioná-lo?</p>
-                  <button 
-                    onClick={() => { setNewProduct({...newProduct, name: searchTerm}); setIsFormVisible(true); }}
+                  <button
+                    onClick={() => { setNewProduct({ ...newProduct, name: searchTerm }); setIsFormVisible(true); }}
                     className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-colors shadow-sm"
                   >
                     Prosseguir com o Cadastro
@@ -4753,18 +4746,18 @@ export default function App() {
             <form onSubmit={handleAddProduct} className="space-y-5">
               <div>
                 <label className="block text-sm font-bold text-slate-700 mb-2">Nome do Produto</label>
-                <input required type="text" value={newProduct.name} onChange={e => setNewProduct({...newProduct, name: e.target.value})} className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none" />
+                <input required type="text" value={newProduct.name} onChange={e => setNewProduct({ ...newProduct, name: e.target.value })} className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-bold text-slate-700 mb-2">Categoria</label>
-                  <select required value={newProduct.category} onChange={e => setNewProduct({...newProduct, category: e.target.value})} className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium text-slate-700">
+                  <select required value={newProduct.category} onChange={e => setNewProduct({ ...newProduct, category: e.target.value })} className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none font-medium text-slate-700">
                     {CATEGORIES.filter(c => c !== 'Todos').map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-slate-700 mb-2">Preço (R$)</label>
-                  <input required type="number" step="0.01" min="0" value={newProduct.price} onChange={e => setNewProduct({...newProduct, price: e.target.value})} placeholder="0.00" className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none" />
+                  <input required type="number" step="0.01" min="0" value={newProduct.price} onChange={e => setNewProduct({ ...newProduct, price: e.target.value })} placeholder="0.00" className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none" />
                 </div>
               </div>
               <div className="pt-4 flex gap-3">
@@ -4853,9 +4846,9 @@ export default function App() {
         totalPis += itemTotal * item.product.taxes.pis;
         totalCofins += itemTotal * item.product.taxes.cofins;
       });
-      return { 
-        totalPrice, totalTax: totalIcms + totalIpi + totalPis + totalCofins, 
-        breakdown: { icms: totalIcms, ipi: totalIpi, pis: totalPis, cofins: totalCofins } 
+      return {
+        totalPrice, totalTax: totalIcms + totalIpi + totalPis + totalCofins,
+        breakdown: { icms: totalIcms, ipi: totalIpi, pis: totalPis, cofins: totalCofins }
       };
     }, [shoppingList]);
 
@@ -5029,7 +5022,7 @@ export default function App() {
     <div className={`min-h-screen font-sans text-slate-900 pb-24 transition-colors duration-500 ${theme.appBg} ${theme.selection}`}>
       <Header />
       <Navigation />
-      
+
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10">
         {activeTab === 'dashboard' && <div className="animate-slide-in-left"><DashboardTab /></div>}
         {activeTab === 'add' && <div className="animate-slide-up"><AddProductTab /></div>}
@@ -5037,7 +5030,8 @@ export default function App() {
         {activeTab === 'taxes' && <div className="animate-fade-scale"><TaxesExplanationTab /></div>}
       </main>
 
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .custom-scrollbar::-webkit-scrollbar { height: 6px; width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }

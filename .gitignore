@@ -1,0 +1,15 @@
+# Dados sensíveis — NUNCA commitar estes arquivos!
+.env
+.env.local
+.env.*.local
+
+# Credenciais OAuth Google
+client_secret*.json
+*.credentials.json
+
+# Dependências
+node_modules/
+
+# Build
+dist/
+dist-ssr/

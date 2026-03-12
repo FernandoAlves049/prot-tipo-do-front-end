@@ -5,6 +5,23 @@ import initialProductsData from '../initialProducts.json';
 // Tipos
 export type TaxMap = { icms: number; ipi: number; pis: number; cofins: number };
 
+export type Role = 'Júnior' | 'Pleno' | 'Sênior';
+
+export interface Professional {
+    id: string;
+    name: string;
+    role: Role;
+    hourlyRate: number;
+}
+
+export interface TaskEntry {
+    id: string;
+    professionalId: string;
+    task: string;
+    hours: number;
+    date: string;
+}
+
 export interface Product {
     id: number;
     name: string;
@@ -37,6 +54,10 @@ interface AppContextType {
     setShoppingList: React.Dispatch<React.SetStateAction<ShoppingItem[]>>;
     fileInputRef: React.RefObject<HTMLInputElement | null>;
     handleFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    professionals: Professional[];
+    setProfessionals: React.Dispatch<React.SetStateAction<Professional[]>>;
+    taskEntries: TaskEntry[];
+    setTaskEntries: React.Dispatch<React.SetStateAction<TaskEntry[]>>;
 }
 
 const AppContext = createContext<AppContextType | null>(null);
@@ -53,6 +74,10 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const [googleUser, setGoogleUser] = useState<GoogleUser | null>(null);
     const [products, setProducts] = useState<Product[]>(initialProductsData as Product[]);
     const [shoppingList, setShoppingList] = useState<ShoppingItem[]>([]);
+    const [professionals, setProfessionals] = useState<Professional[]>([
+        { id: '1', name: 'Fernando Alves', role: 'Sênior', hourlyRate: 150 },
+    ]);
+    const [taskEntries, setTaskEntries] = useState<TaskEntry[]>([]);
     const fileInputRef = useRef<HTMLInputElement | null>(null);
 
     const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -107,6 +132,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             products, setProducts,
             shoppingList, setShoppingList,
             fileInputRef, handleFileUpload,
+            professionals, setProfessionals,
+            taskEntries, setTaskEntries,
         }}>
             {children}
         </AppContext.Provider>

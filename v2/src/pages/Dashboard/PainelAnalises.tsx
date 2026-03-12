@@ -4,12 +4,12 @@ import PageMeta from '../../components/common/PageMeta';
 import { useAppContext } from '../../context/AppContext';
 import { TrendingUp, BarChart3, AlertCircle, Sparkles, Loader2, Filter, Search } from 'lucide-react';
 
-const GEMINI_API_KEY = 'AIzaSyDiueN9vh19yLCjqFgsv4Wn_enMC3TlPHE';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY as string | undefined;
 
 
 async function askGemini(prompt: string): Promise<string> {
-    if (!GEMINI_API_KEY) return '🔑 Configure a chave da API Gemini em PainelAnalises.tsx para usar esta função.';
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`;
+    if (!GEMINI_API_KEY) return '🔑 Chave da API Gemini não configurada. Adicione VITE_GEMINI_API_KEY ao arquivo .env do projeto.';
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
     let delay = 1000;
     for (let i = 0; i < 5; i++) {
         try {
