@@ -1,47 +1,12 @@
 import React, { createContext, useContext, useRef, useState } from 'react';
 import initialProductsData from '../initialProducts.json';
+import type {
+    GoogleUser, Product, ShoppingItem,
+    Professional, TaskEntry,
+} from './types';
 
-
-// Tipos
-export type TaxMap = { icms: number; ipi: number; pis: number; cofins: number };
-
-export type Role = 'Júnior' | 'Pleno' | 'Sênior';
-
-export interface Professional {
-    id: string;
-    name: string;
-    role: Role;
-    hourlyRate: number;
-}
-
-export interface TaskEntry {
-    id: string;
-    professionalId: string;
-    task: string;
-    hours: number;
-    date: string;
-}
-
-export interface Product {
-    id: number;
-    name: string;
-    category: string;
-    storeType: 'supermercado' | 'posto';
-    price: number;
-    taxes: TaxMap;
-    history: number[];
-}
-
-export interface ShoppingItem {
-    product: Product;
-    quantity: number;
-}
-
-export interface GoogleUser {
-    name: string;
-    email: string;
-    picture: string;
-}
+// Re-export types so consumers can still import from this file
+export type { TaxMap, Role, Professional, TaskEntry, Product, ShoppingItem, GoogleUser } from './types';
 
 interface AppContextType {
     isLoggedIn: boolean;
@@ -62,14 +27,13 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | null>(null);
 
-
-export const useAppContext = () => {
+export function useAppContext() {
     const ctx = useContext(AppContext);
     if (!ctx) throw new Error('useAppContext must be used inside AppProvider');
     return ctx;
-};
+}
 
-export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export function AppProvider({ children }: { children: React.ReactNode }) {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [googleUser, setGoogleUser] = useState<GoogleUser | null>(null);
     const [products, setProducts] = useState<Product[]>(initialProductsData as Product[]);
@@ -138,4 +102,4 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             {children}
         </AppContext.Provider>
     );
-};
+}
