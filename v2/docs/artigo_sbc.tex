@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{enumitem}
+
+\title{Documentação do Projeto Meu Índice de Preço: Plataforma Web para Acompanhamento da Inflação Local}
+
+\author{fernando alves de souza\inst{1}, felipe montalvão \inst{1},victor hugo \inst{1}}
+
+\address{Instituto Federal Goiano -- Campus Morrinhos
+  \email{fernando.souza1@estudante.ifgoiano.edu.br}
+  \email{felipe.rodrigues@estudante.ifgoiano.edu.br}
+  \email{victor.marques@estudante.ifgoiano.edu.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document presents the complete documentation for the "Meu Índice de Preço" extension project, developed to track inflation and price variations for the population of Morrinhos-GO. Following the SBC template, this report details the software architecture, the mapping between Functional Requirements and User Interfaces, the roles within the development team, effort estimation, and the financial cost associated with building the platform using modern web technologies.
+\end{abstract}
+
+\begin{resumo}
+Este documento apresenta a documentação completa referente ao projeto de extensão "Meu Índice de Preço", desenvolvido para rastrear a inflação e a variação de preços de produtos para a população de Morrinhos-GO. Seguindo os moldes do template da SBC, este relatório detalha a arquitetura de software, o mapeamento entre Requisitos Funcionais e Interfaces de Usuário (IU), os papéis da equipe de desenvolvimento, a estimativa de esforço e a precificação para a construção do portal estruturado com tecnologias web contemporâneas.
+\end{resumo}
+
+\section{Introdução e Contextualização}
+O aumento contínuo no custo de vida e a flutuação tributária afetam de maneira incisiva o poder de compra da população. Embora índices nacionais como o IPCA meçam a variação de preços em grandes centros, eles frequentemente falham em espelhar a dinâmica de pequenos municípios.
+
+Nesse cenário sociopolítico, o projeto \textbf{Meu Índice de Preço} tem como objetivo criar um \textit{website} interativo voltado para a população de Morrinhos-GO. O portal possibilita o acompanhamento quinzenal da inflação local, monitorando uma cesta básica de cerca de 30 itens de alto consumo, baseados em pesquisas oficiais e costumes locais. Além da disponibilização de dados coletados em pelo menos 10 estabelecimentos físicos do município, a plataforma inovará ao oferecer um simulador dinâmico de \textit{Inflação Personalizada}, através do qual cada usuário preencherá seus hábitos específicos de consumo para entender o impacto monetário real de forma analítica e visual.
+
+A estrutura deste documento descreve minuciosamente os padrões de infraestrutura e gestão exigidos para a materialização desta plataforma, englobando infraestrutura tecnológica, perfis da equipe técnica e mapeamento financeiro da construção.
+
+\section{Tecnologias e Recursos Empregados}\label{sec:tecnologias}
+A viabilização do \textit{website} de monitoramento foca fortemente em responsividade digital ("mobile-first"), alta estabilidade e segurança.
+
+\subsection{Stack de Desenvolvimento e Hospedagem}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Linguagens e Renderização:} Utilização mandatória de \textit{HTML5}, \textit{CSS3} e \textit{JavaScript} modernos. A arquitetura será regida por um \textit{framework} ou biblioteca puramente focada na construção baseada em componentes interativos, sendo a base sugerida o \textit{React.js}.
+    \item \textbf{Estilização:} Emprego de bibliotecas baseadas em classes utilitárias visando design unificado e acessibilidade.
+    \item \textbf{Servidor Web (\textit{Deploy}):} Infraestrutura com uso de \textit{NGINX} ou \textit{Apache}, dimensionados para alocar a hospedagem em nuvem privada (VPS - \textit{Virtual Private Server}). Suporte de carga rigoroso avaliado para sustentar acesso simultâneo durante eventos e campanhas à população de Morrinhos.
+    \item \textbf{Gestor de Versionamento:} Uso constante de \textit{Git} alinhado às práticas adequadas de revisão em rede.
+\end{itemize}
+
+\subsection{Recursos de Hardware e Software (Equipe)}
+A elaboração da ferramenta envolverá estações de trabalho munidas de acesso contínuo à web. O software engloba o VS Code (Módulos de edição), ferramentas para Wireframing como o Figma (para as decisões do "design-system" da aba de gráficos), Node.js no back-end para execução isolada e ferramentas de medição de eficiência web.
+
+\section{Arquitetura e Relacionamento de IU com Casos de Uso}
+Durante a especificação das metas de trabalho, identificou-se os Casos de Uso (UC) inerentes ao cálculo e exibição dos preços analisados. A Tabela \ref{tab:uc} mostra a tradução exata de cada requisito interativo para sua respectiva tela.
+
+\begin{table}[H]
+\centering
+\caption{Mapeamento: Casos de Uso para Componentes Departamentais}
+\label{tab:uc}
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Caso de Uso Principal} & \textbf{Interface (Path/Component)} & \textbf{Descrição do Fluxo} \\ \hline
+UC01 - Consultar Inflação & \texttt{/inflacao} (\texttt{PainelInflacao}) & Página pública inicial para leitura. Renderiza gráficos estáticos das 30 mercadorias avaliadas em Morrinhos. \\ \hline
+UC02 - Inflação Pessoal & \texttt{/simulador} (\texttt{SimuladorPessoal}) & Calculadora dinâmica. O usuário ajusta a quantidade padrão e aplica os pesos para gerar a taxa final para si. \\ \hline
+UC03 - Envio de Feedback & \texttt{/contato} (\texttt{ContatoDeFeedback}) & Formulário acessível onde os usuários da comunidade reportam problemas ou relatam uso prático (exigência do projeto). \\ \hline
+UC04 - Login Docente & \texttt{/admin/login} (\texttt{Admin.tsx}) & Barreira de proteção SSL para autenticação e gestão. \\ \hline
+UC05 - Cadastro de Preços & \texttt{/admin/coleta} (\texttt{GestaoColetas}) & Tela operada apenas pelos pesquisadores. Permite injeção em lote das buscas a cada 15 dias. \\ \hline
+\end{tabularx}
+\end{table}
+
+\section{Planejamento e Gestão das Equipes de Software}
+
+\subsection{Papéis Hierárquicos e Responsabilidades}
+Para transformar a meta literária da cesta de produtos em telas virtuais sem atritos, distribuiu-se as responsabilidades nos três patamares primordiais de engenharia de software na web:
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Desenvolvedor Júnior:} O time júnior é designado à tradução estrita das telinhas planejadas pela usabilidade. Foca-se em entregar o esqueleto web em HTML semântico e CSS de alta precisão. Eles cuidarão de entregar componentes como os botões de simulação do UC02 e os formulários reativos para o recebimento de melhorias (UC03). Não lidam diretamente com o cálculo em si, apenas com o visual atrativo da página.
+    
+    \item \textbf{Desenvolvedor Pleno:} Ocupa-se inteiramente do elo lógico do ciclo de vida. Receberá a fórmula oficial de cômputo da inflação do IBGE e fará a programação algorítmica robusta a ser disparada pelo UC02. Manipulará a extração dos valores históricos numéricos gerando métricas precisas acopladas aos Gráficos visíveis do UC01.
+    
+    \item \textbf{Sênior / Tech Lead:} Exclusivamente focado na blindagem e hospedagem da plataforma (Metas focadas na configuração do provedor \textit{Cloud}). Aplicará proteções SSL, administrará o servidor Linux com \textit{NGINX}, configurará o subdomínio ou TLD para a população de Morrinhos e homologará testes pesados de carga garantindo picos simultâneos nas épocas de palestras.
+\end{itemize}
+
+\subsection{Estimativa de Esforço e Alocação}
+Buscando atingir fielmente o cronograma (coletas físicas, desenvolvimento web e marketing digital contínuo estipulado para finais de dezembro de 2026), calculou-se o tempo integral da programação do Portal a cerca de \textbf{92 Horas totais líquidas}.
+
+\begin{table}[H]
+\centering
+\caption{Detalhamento de Distribuição do Relógio da SPRINT}
+\label{tab:horas}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Macro-Tarefa Tecnológica} & \textbf{Perfil Alocado} & \textbf{Horas Mínimas Estimadas} \\ \hline
+\textbf{Setup VPS NGINX, Domínio e SSL} & Sênior & 16h  \\ \hline
+\textbf{Desenvolvimento Algoritmo Inflação e Mocks}& Pleno & 12h  \\ \hline
+\textbf{Ponte e Bind de Eventos dos Gráficos} & Pleno & 12h  \\ \hline
+\textbf{Estruturação de Telas e Acessibilidade}& Júnior & 24h  \\ \hline
+\textbf{Telas do Formulário Administrativo (UC04)}& Júnior & 16h  \\ \hline
+\textbf{Layout Base e Code Reviews Finais} & Júnior e Sênior & 12h  \\ \hline
+\textbf{Totalização Global} & - & \textbf{92h}  \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Precificação e Orçamento do Software}
+O preço para execução laborativa deste segmento digital obedece ao montante das 92 horas descritas, multiplicadas ativamente pelo custo tarifário de mercado focado inteiramente na entrega tecnológica (dispensando honorários das coletas físicas e palestras formativas, focando apenas no Software).
+
+\begin{itemize}[leftmargin=*]
+    \item Custo Hora/Sênior (16h $\times$ R\$ 150,00): \textbf{R\$ 2.400,00}.
+    \item Custo Hora/Pleno (24h $\times$ R\$ 90,00): \textbf{R\$ 2.160,00}.
+    \item Custo Hora/Júnior (52h $\times$ R\$ 50,00): \textbf{R\$ 2.600,00}.
+    \item Abatimentos de Licençamento Anual e VPS Contratada: \textbf{R\$ 1.500,00}
+    \item Margem de Lucro Bruto Operacional Sustentável (20\%): \textbf{R\$ 1.732,00}
+\end{itemize}
+
+O orçamento isolado para cobrir propriamente os quesitos de desenvolvimento do portal \textit{Meu Índice de Preço} atinge \textbf{R\$ 10.392,00}.
+
+\section{Conclusões e Considerações Finais}
+Conceber e projetar um instrumento digital contínuo de rastreio monetário transcende o simplório viés do fomento acadêmico; entrega autonomia civil à cidade de Morrinhos-GO. Através da implementação dos Casos de Uso delineados, que amarram fielmente a visão restrita da inflação calculada a uma interatividade viva para o cidadão no "Simulador de Gastos", atinge-se o princípio basilar da extensão acadêmica. 
+
+A estrutura hierárquica e bem dimensionada das horas gastas em \textit{HTML}/\textit{Deploy} legitima ainda um referencial sadio do planejamento arquitetônico web, prevendo com sucesso cada encargo financeiro e papel vital (desde as fundações da Interface até o monitoramento crítico da VPS no momento das palestras de divulgação à comunidade). Assim, comprova-se a robustez dos recursos destinados a esse ambicioso marco de dados para a localidade.
+
+\bibliographystyle{sbc}
+\begin{thebibliography}{99}
+\bibitem[Brooks 1995]{brooks} Brooks, Frederick P. ``The Mythical Man-Month: Essays on Software Engineering''. Addison-Wesley Professional. 1995.
+\bibitem[Mankiw 2019]{mankiw} Mankiw, N. Gregory. ``Introdução à economia''. 4. ed. São Paulo: Cengage Learning, 2019.
+\bibitem[Merrill 2019]{merrill} Merrill, Ben. ``Desenvolvimento de Websites: Do básico ao avançado''. 2. ed. Rio de Janeiro: Alta Books, 2019.
+\bibitem[Mishra 2015]{mishra} Mishra, Sandeep. ``Mastering NGINX: High Performance with a Flexible Web Server''. Packt Publishing, 2015.
+\bibitem[Zell 2011]{zell} Zell, Jon Duckett. ``HTML and CSS: Design and Build Websites''. 1. ed. Wiley, 2011.
+\end{thebibliography}
+
+\end{document}

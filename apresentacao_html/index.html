@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Seminário: Projeto Meu Índice de Preço</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CSS Reveal.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/moon.min.css" id="theme">
+  
+  <style>
+    .reveal table { font-size: 0.60em; margin: auto; width: 90%; }
+    .reveal th, .reveal td { padding: 10px 15px; border-bottom: 1px solid #777; }
+    .text-left { text-align: left; }
+    .text-center { text-align: center; }
+    .highlight { color: #f9d856; }
+    .small-text { font-size: 0.7em; margin-bottom: 15px;}
+    .reveal ul li.fragment { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: Capa -->
+      <section data-transition="zoom">
+        <h2 style="font-size: 1.8em;">Meu Índice de Preço</h2>
+        <h3 class="highlight">Plataforma Web para Inflação Local</h3>
+        <br>
+        <p><strong>Apresentação e Documentação de Frontend</strong></p>
+        <p class="small-text">Fernando Alves de Souza, Felipe Montalvão, Victor Hugo<br>Data: 25/03/2026</p>
+      </section>
+
+      <!-- Slide 2: Introdução -->
+      <section data-transition="fade">
+        <h3>1. Introdução e Problematização</h3>
+        <ul style="font-size: 0.8em;" class="text-left">
+          <li class="fragment fade-right"><strong>O Problema:</strong> Índices nacionais (como IPCA) não refletem a real variação do custo de vida na cidade de Morrinhos-GO.</li>
+          <li class="fragment fade-right"><strong>O Impacto:</strong> Dificuldade no planejamento financeiro das famílias locais devido à falta de dados compreensíveis e rápidos.</li>
+          <li class="fragment fade-right"><strong>A Solução:</strong> Um Website interativo acompanhando a flutuação de 30 itens de alto consumo, atualizado quinzenalmente.</li>
+        </ul>
+      </section>
+
+      <!-- Slide 3: Funcionalidades -->
+      <section data-transition="convex">
+        <h3 style="font-size: 1.4em;">2. Funcionalidades Centrais</h3>
+        <p class="small-text">Duas mecânicas promovem a educação financeira:</p>
+        <ol style="font-size: 0.8em;" class="text-left">
+          <li class="fragment zoom-in"><strong>Painel da Inflação Geral:</strong> Exibição transparente via gráficos da variação média baseada nas coletas em 10 estabelecimentos físicos.</li>
+          <li class="fragment zoom-in"><strong>Simulador de Inflação Personalizada:</strong> O cidadão insere seus hábitos mensais reais e calcula o impacto isolado no próprio bolso.</li>
+          <li class="fragment zoom-in"><strong>Painel Administrativo:</strong> Inserção em lote das pesquisas logradas pelos estudantes.</li>
+        </ol>
+      </section>
+
+      <!-- Slide 3.1: Capturas Reais -->
+      <section data-transition="fade">
+        <h3 style="font-size: 1.3em;">Visuais do Portal</h3>
+        <div style="display: flex; gap: 15px; align-items: center; justify-content: center; margin-top: 10px;">
+          <div class="fragment fade-up" style="flex: 1;">
+            <p class="small-text" style="margin-bottom: 5px;"><strong>Painel de Inflação</strong></p>
+            <img src="img_painel.png" alt="Painel Geral" style="width: 100%; border-radius: 8px; border: 2px solid #555;">
+          </div>
+          <div class="fragment fade-up" style="flex: 1;">
+            <p class="small-text" style="margin-bottom: 5px;"><strong>Simulador Pessoal</strong></p>
+            <img src="img_simulador.png" alt="Simulador Pessoal" style="width: 100%; border-radius: 8px; border: 2px solid #555;">
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Tecnologias / Tópico 6 -->
+      <section data-transition="concave">
+        <h3>3. Tecnologias e Recursos Exigidos</h3>
+        <ul style="font-size: 0.8em;" class="text-left">
+          <li class="fragment"><strong>Frontend:</strong> HTML5, CSS3, e JavaScript via bibliotecas interativas (React).</li>
+          <li class="fragment"><strong>Deploy e Hospedagem:</strong> Servidor com <span class="highlight">NGINX / Apache</span>, rodando em Nuvem/VPS para segurar tráfego regional bruto.</li>
+          <li class="fragment"><strong>Ferramentas Auxiliares:</strong> Git/GitHub, Figma para UI/UX e VS Code.</li>
+        </ul>
+        <hr class="fragment">
+        <p class="fragment text-left small-text"><span class="highlight">Hardware do Time:</span> Máquinas focadas em compilação moderna (16GB RAM) ativas para manutenção do ambiente.</p>
+      </section>
+
+      <!-- Slide 5: IU x Casos de Uso / Tópico 3 -->
+      <section data-transition="slide-in fade-out">
+        <h3>4. Relacionamento: IU vs Casos de Uso</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>UC</th>
+              <th>Componente (Tela Frontend)</th>
+              <th>Descrição do Fluxo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="fragment"><td>UC01 - Consultar Inflação</td><td><code>PainelInflacao</code></td><td>Visualizar gráficos reais do cenário municipal.</td></tr>
+            <tr class="fragment"><td>UC02 - Inflação Pessoal</td><td><code>SimuladorPessoal</code></td><td>Formulário dinâmico de inserção de peso de consumo pessoal.</td></tr>
+            <tr class="fragment"><td>UC03 - Envio de Feedback</td><td><code>ContatoDeFeedback</code></td><td>Aba acessível de sugestões populares atrelada a API.</td></tr>
+            <tr class="fragment"><td>UC04 - Cadastro de Preços</td><td><code>GestaoColetas</code> (Admin)</td><td>Dashboard onde pesquisadores dão alta nas cotações de forma restrita (Logada).</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Slide 6: Papéis da Equipe / Tópico 5 -->
+      <section data-transition="fade">
+        <h3 style="font-size:1.3em;">5. Perfis e Estrutura da Equipe Web</h3>
+        <ul style="font-size: 0.7em;" class="text-left">
+          <li class="fragment"><strong class="highlight">Nível Júnior:</strong> Codificação do layout puro e semântico (HTML, CSS). Entrega de botões responsivos, criação focada em acessibilidade nos formulários web e estruturação da apresentação visual (Mobile-first).</li>
+          <li class="fragment"><strong class="highlight">Nível Pleno:</strong> Transcrição da regra do cálculo do IBGE para algoritmos \textit{client-side} em JavaScript. Integração dinâmica do \textit{State} na calculadora pessoal do Cidadão e manipulação do Gráfico.</li>
+          <li class="fragment"><strong class="highlight">Tech Lead / Sênior:</strong> Defensor da arquitetura do Projeto. Gestão do Servidor Linux (VPS), configuração robusta de acessos NGINX e proteção dos certificados (HTTPS/SSL).</li>
+        </ul>
+      </section>
+
+      <!-- Slide 7: Horas / Tópico 4 -->
+      <section data-transition="zoom-in slide-out">
+        <h3 style="font-size: 1.2em;">6. Esforço e Alocação (Desenvolvimento Web)</h3>
+        <p class="small-text">Das 92 horas destinadas unicamente ao projeto Web.</p>
+        <div style="display: flex; gap: 20px; font-size: 0.8em; justify-content: center; margin-top:20px;">
+          <div class="fragment" style="border: 2px solid #555; padding: 20px; border-radius: 8px; width: 30%;">
+            <p><strong>Sênior</strong><br><span class="highlight" style="font-size:1.5em;">16h</span></p>
+            <p class="small-text">Configuração NGINX, SSL e Repositório Central</p>
+          </div>
+          <div class="fragment" style="border: 2px solid #555; padding: 20px; border-radius: 8px; width: 30%;">
+            <p><strong>Pleno</strong><br><span class="highlight" style="font-size:1.5em;">24h</span></p>
+            <p class="small-text">Lógicas Matemáticas e Gráficos da Bolsa dos 30 itens</p>
+          </div>
+          <div class="fragment" style="border: 2px solid #555; padding: 20px; border-radius: 8px; width: 30%;">
+            <p><strong>Júnior</strong><br><span class="highlight" style="font-size:1.5em;">52h</span></p>
+            <p class="small-text">Páginas de feedback e construção estrita do HTML</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Precificação / Tópico 7 -->
+      <section data-transition="flip">
+        <h3 style="font-size: 1.2em;">7. Precificação Orçamentária Web</h3>
+        <ul style="font-size: 0.75em;" class="text-left">
+          <li class="fragment"><strong>Sênior:</strong> 16h × R$ 150 = <span class="highlight">R$ 2.400,00</span></li>
+          <li class="fragment"><strong>Pleno:</strong> 24h × R$ 90 = <span class="highlight">R$ 2.160,00</span></li>
+          <li class="fragment"><strong>Júnior:</strong> 52h × R$ 50 = <span class="highlight">R$ 2.600,00</span></li>
+          <li class="fragment"><strong>Despesas em Hospedagens (Servidor NGINX/Cloud):</strong> R$ 1.500,00</li>
+          <li class="fragment"><strong>Lucro Organizacional/Fundo (20%):</strong> R$ 1.732,00</li>
+        </ul>
+        <h4 class="fragment highlight" style="margin-top: 30px; font-size: 1.5em;">Entrega Tecnológica: R$ 10.392,00</h4>
+        <p class="small-text fragment">* Apenas orçamento da programação, ignorando coletas manuais e publicidades no rádio.</p>
+      </section>
+
+      <!-- Slide 9: Conclusões -->
+      <section data-transition="zoom-in">
+        <h3>8. Conclusões Práticas</h3>
+        <ul style="font-size: 0.8em;" class="text-left">
+          <li class="fragment fade-up">Autonomia Civil: Trazer a informação inflacionária diretamente para a métrica de Morrinhos-GO aumenta a transparência social.</li>
+          <li class="fragment fade-up">Mapeamento de Esforço: Garantir que a lógica espinhosa fique com Pleno, o visual resguardado com Júnior e a estabilidade de acessos sob alçada Sênior.</li>
+          <li class="fragment fade-up highlight"><strong>Legado do Projeto:</strong> Promover a percepção aguda sobre poder de compra nas famílias locais por décadas.</li>
+        </ul>
+        <br><br>
+        <h2 class="fragment highlight" style="font-size: 1.8em;">Obrigado!</h2>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Scripts Reveal.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      transition: 'zoom', // Transição global (fade, slide, convex, zoom)
+      transitionSpeed: 'slow',
+    });
+  </script>
+</body>
+</html>

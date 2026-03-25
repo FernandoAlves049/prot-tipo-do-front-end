@@ -1,0 +1,45 @@
+name: Deploy Apresentação para o GitHub Pages
+
+on:
+  push:
+    branches: ["main", "master"]
+    paths:
+      - 'apresentacao_html/**'
+  
+  # Permite roda o deploy manualmente na aba Actions
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Preparar Artifact
+        # Renomeia o HTML longo para index.html para o Pages reconhecer silenciosamente a raiz
+        run: mv apresentacao_html/slides_apresentacao_com_animacoes.html apresentacao_html/index.html || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './apresentacao_html'
+
+      - name: Deploy para GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
